@@ -1,57 +1,35 @@
-# Node dependencies
+# Node modules
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Build output
-dist/
-build/
-coverage/
-
-# TypeScript
-*.tsbuildinfo
 
 # Environment variables
 .env
-.env.test
-.env.development
-.env.production
 .env.local
+.env.*.local
 
 # Logs
 logs/
 *.log
-logs/**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Prisma generated client
+src/prisma/client.ts
+
+# Prisma migration lock file
+prisma/migrations/migration_lock.toml
+
+# TypeScript build output
+dist/
+build/
+
+# VSCode settings
+.vscode/
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# IDE and editor configs
-.vscode/
-.idea/
+# Optional: local IDE files
 *.swp
-
-# Prisma
-prisma/dev.db
-prisma/dev.db-journal
-prisma/migrations/
-
-# Temporary files
-tmp/
-temp/
-.cache/
-*.tmp
-
-# Optional: If using Docker
-docker-compose.override.yml
-.docker/
-
-# Optional: If using testing tools
-jest-html-reporters-*
-coverage-final.json
-
-# Optional: if you store generated client code
-src/generated/
+*.swo
