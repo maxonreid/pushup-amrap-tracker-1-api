@@ -15,7 +15,7 @@ export const createPushupRecordService = async (userId: number, pushupCount: num
 /**
  * Get all pushup records for a user, newest first
  */
-export const getPushupRecordsService = async (userId: number) => {
+export const getAllPushupRecordsService = async (userId: number) => {
   return prisma.pushupRecord.findMany({
     where: { userId },
     orderBy: { date: "desc" },

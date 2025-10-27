@@ -1,7 +1,7 @@
 import type { Request, Response } from "express";
 import {
   createPushupRecordService,
-  getPushupRecordsService,
+  getAllPushupRecordsService,
   getPushupRecordByIdService,
   deletePushupRecordService,
   updatePushupRecordService,
@@ -34,7 +34,7 @@ export const createPushupRecord = async (req: Request, res: Response) => {
 // @desc    Get all pushup records for the logged-in user
 // @route   GET /api/pushups
 // @access  Private
-export const getPushupRecords = async (req: Request, res: Response) => {
+export const getAllPushupRecords = async (req: Request, res: Response) => {
   if (!req.user) return res.status(401).json({ message: "Not authorized" });
 
   try {

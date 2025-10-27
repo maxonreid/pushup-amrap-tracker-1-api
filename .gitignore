@@ -16,8 +16,11 @@ yarn-error.log*
 # Prisma generated client
 src/prisma/client.ts
 
+
+
 # Prisma migration lock file
 prisma/migrations/migration_lock.toml
+prisma/dev.db
 
 # TypeScript build output
 dist/
